@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Are-na Web Component</title>
+    <script src="./dist/arenawebc.iife.js"></script>
+  </head>
+  <body>
+    <div id="content" class="image-blocks"></div>
+
+    <template id="image-block">
+      <figure class="image-block">
+        <img alt="" src="" class="image">
+      </figure>
+    </template>
+
+    <script>
+        const {ArenaWebComponent} = arenawebc;
+        window.customElements.define("custom-el", ArenaWebComponent)
+        new ArenaWebComponent({slug: "vr-in-the-gallery"})
+    </script>
+  </body>
+</html>

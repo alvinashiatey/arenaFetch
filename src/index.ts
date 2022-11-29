@@ -1,0 +1,1 @@
+export {ArenaWebComponent} from "./arena_webc"

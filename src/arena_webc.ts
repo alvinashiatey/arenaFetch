@@ -12,11 +12,6 @@ class ArenaWebComponent {
       ? `https://api.are.na/v2/channels/${options.slug}?sort=position&order=asc&per=100`
       : "";
     this.templateBlocks = {};
-    this.init()
-      .then(() => {})
-      .catch((e) => {
-        console.log(e.message);
-      });
   }
 
   private async init() {
